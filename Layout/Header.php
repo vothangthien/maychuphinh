@@ -43,7 +43,7 @@
             <?php echo $_COOKIE['user_email'];?>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item " href="index.php?page=Profile">Profile</a></li>
+            <li><a class="dropdown-item" href="index.php?page=Profile">Profile</a></li>
             <li><a class="dropdown-item" href="index.php?page=Product">Product</a></li>
             <li><a class="dropdown-item" href="#">ADmin Acconut</a></li>
 
