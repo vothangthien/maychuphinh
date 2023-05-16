@@ -33,9 +33,7 @@
             if (response.success) {
               alert("Login successful!");
               const userCookies = {
-                user_id: response.user_id,
                 user_email: emailInput.value,
-                user_type: response.user_type,
 
               
               };
