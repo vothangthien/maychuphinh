@@ -25,39 +25,38 @@
         <li class="nav-item ">
           <a class="nav-link active" aria-current="page" href="index.php?page=Home">Home</a>
         </li>
-        <li class="nav-item"<?php if(isset($_COOKIE['user_type'])){echo 'style="display:none"';} ?>>
+        <li class="nav-item"<?php if(isset($_COOKIE['user_email'])){echo 'style="display:none"';} ?>>
           <a class="nav-link" href="index.php?page=SigNin">SigNin</a>
         </li>
 
 
-        <li class="nav-item"<?php if(isset($_COOKIE['user_type'])){echo 'style="display:none"';} ?>>
+        <li class="nav-item"<?php if(isset($_COOKIE['user_email'])){echo 'style="display:none"';} ?>>
           <a class="nav-link" href="index.php?page=Register">Register</a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="#">Hepl</a>
         </li>
-        <li class="nav-item dropdown" <?php  if(!isset($_COOKIE['user_type'])){echo'style="display:none"';}?>>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <?php echo $_COOKIE['user_email'];?>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li class="nav-item dropdown" <?php if (!isset($_COOKIE['user_email'])) { echo 'style="display:none"'; } ?>>
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <?php echo $_COOKIE['user_email']; ?>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <?php
+        $type = isset($_COOKIE['user_type']) ? (base64_decode($_COOKIE['user_type']) === 'administration') : false;
 
-          <?php
-          if($type==="adminstration"){
+        if ($type) {
+            echo '<li><a class="dropdown-item" href="index.php?page=Profile">Profile</a></li>';
+            echo '<li><a class="dropdown-item" href="index.php?page=Product">Product</a></li>';
+        }
+        ?>
+        <li><a class="dropdown-item" href="#">Admin Account</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Log Out</a></li>
+    </ul>
+</li>
 
-          echo  '<li><a class="dropdown-item" href="index.php?page=Profile">Profile</a></li>';
-           echo '<li><a class="dropdown-item" href="index.php?page=Product">Product</a></li>';
-          }
-          
-          ?>
-            
-            <li><a class="dropdown-item" href="#">ADmin Acconut</a></li>
 
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">LogOut</a></li>
-          </ul>
-        </li>
      
       </ul>
       <form class="d-flex">
