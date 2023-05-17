@@ -19,6 +19,18 @@
      <main> <?php  
           $page=isset($_GET['page']) ?$_GET['page']:"SigNin";
            switch($page){
+
+
+               
+               case'dashboard':
+                    include __DIR__ . './page/dashboard/dashboard.php';
+                    break;
+               case 'Pageintroduce':
+                    include __DIR__ . './page/introduce/Pageintroduce.php';
+                    break;
+               case'ViewProduct':
+                    include __DIR__ . './page/ViewProduct/ViewProduct.php';
+                    break;
                case'Product':
                     include __DIR__ . './page/Product/Product.php';
                     break;

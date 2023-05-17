@@ -1,15 +1,28 @@
+<head>
+  <link rel="stylesheet" href="././public/style/Acconut/Sigin$register.css"/>
+</head>
+
+<body>
+  
 <div class="Container-form-SigNin">
   <div class="Container-form">
     <div class="form-header-signin">
       <label>Sign in</label>
     </div>
-    <form id="form-signin">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required />
-      <button type="submit">Sign in</button>
-    </form>
+
+          <form id="form-signin" class="form-signin">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Sign in</button>
+          </form>
+<div>
+
+ <p> 
+you forgot your password <a href="#"> please click in this</a> </p>
+</div>
+          
     <div class="form-footer-signin">
       <p>Don't have an account? <span><a href="index.php?page=Register">Register here</a></span></p>
     </div>
@@ -62,3 +75,4 @@
     xhr.send(`email=${emailInput.value}&password=${passwordInput.value}`);
   });
 </script>
+</body>

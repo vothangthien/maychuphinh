@@ -4,12 +4,6 @@
 <html>
 <head>
 <title>Home</title>
-<meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
@@ -20,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 </head>
 <body>
-
+<form action="" method="POST">
 
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
   <img class="w3-image" src="./public/img/3.jpg" alt="Hamburger Catering" width="1600" height="800">
@@ -97,6 +91,6 @@ h1, h2, h3, h4, h5, h6 {
 <footer class="w3-center w3-light-grey w3-padding-32">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
-
+</form>
 </body>
 </html>

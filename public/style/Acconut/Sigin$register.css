@@ -1,0 +1,40 @@
+*{
+   
+}
+
+.Container-form-Register{
+     margin: auto;
+     height: 800px;
+
+     }
+.Container-form{
+     text-align: center;
+     font-size: 30px;
+     font-weight: 900;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     margin: auto;
+     display: block;
+     border: 1px solid black;
+
+     height: 800px;
+width: 500px;
+border-radius: 5%;
+}
+.form-signin{
+     margin-top: 50px;
+     height: 400px;
+}
+.form-header-signin{
+     height: 80px;
+     color: cadetblue;
+     text-align: center;
+     font-size: 60px;
+}
+.form-header-signin,.form-footer-signin{
+     border: 1px solid black;
+}
+
+input{
+     margin: auto;
+     display: block;
+}

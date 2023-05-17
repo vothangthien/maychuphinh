@@ -1,0 +1,19 @@
+.container-form-dashboard{
+     height: 800px;
+     display: inline-flex;
+     width: 100%;
+
+}
+
+.container-from-dashboard-left{
+     width: 10% !important;
+     height: 800px;
+
+     background: red;
+}
+.container-from-dashboard-right{
+     width: 90% !important;
+     height: 800px;
+
+     background: blue;
+}

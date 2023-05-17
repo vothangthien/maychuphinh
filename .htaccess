@@ -1,1 +1,4 @@
 ErrorDocument 404 http://localhost/shopping/404.php
+ErrorDocument 403 http://localhost/shopping/404.php
+ErrorDocument 404 http://localhost/shopping/404.php
+ErrorDocument 500 http://localhost/shopping/404.php
