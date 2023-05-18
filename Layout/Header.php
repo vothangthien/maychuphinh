@@ -30,7 +30,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Hepl</a>
+          <a class="nav-link" href="index.php?page=Hepl">Hepl</a>
         </li>
         <li class="nav-item dropdown" <?php if (!isset($_COOKIE['user_email'])) { echo 'style="display:none"'; } ?>>
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
