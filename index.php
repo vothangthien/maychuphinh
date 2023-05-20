@@ -29,7 +29,6 @@
                     break;
                
                case'dashboard':
-
                     include __DIR__ . './page/dashboard/dashboard.php';
                     break;
                case 'Pageintroduce':
