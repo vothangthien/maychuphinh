@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 </head>
 <body>
-<form action="" method="POST">
 
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
   <img class="w3-image" src="./public/img/3.jpg" alt="Hamburger Catering" width="1600" height="800">
@@ -81,7 +80,6 @@ h1, h2, h3, h4, h5, h6 {
       <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
       <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-    </form>
   </div>
   
 <!-- End page content -->
