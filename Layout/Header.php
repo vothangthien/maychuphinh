@@ -18,7 +18,11 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=Pageintroduce">Introduce</a>
         </li>
+        
 
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?page=PageVideo">Video</a>
+        </li>
         <li class="nav-item"<?php if(isset($_COOKIE['user_email'])){echo 'style="display:none"';} ?>>
           <a class="nav-link" href="index.php?page=SigNin">SigNin</a>
         </li>

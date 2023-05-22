@@ -1,0 +1,66 @@
+.Container-Form-Profile {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     width: 100%;
+     background-color: #f2f2f2;
+   }
+
+   .from-Profile {
+     background-color: #ffffff;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+
+   .font-h1-Profile {
+     text-align: center;
+     margin-bottom: 20px;
+   }
+
+   .id-form-profile,
+   .MSADMIN-form-profile,
+   .useradministration-form-profile,
+   .email-form-profile,
+   .password-form-profile,
+   .phone-form-profile,
+   .gender-form-profile,
+   .address-form-profile,
+   .type-form-profile,
+   .tca-form-profile,
+   .tua-form-profile {
+     margin-bottom: 15px;
+   }
+
+   .id-form-profile label,
+   .MSADMIN-form-profile label,
+   .useradministration-form-profile label,
+   .email-form-profile label,
+   .password-form-profile label,
+   .phone-form-profile label,
+   .gender-form-profile label,
+   .address-form-profile label,
+   .type-form-profile label,
+   .tca-form-profile label,
+   .tua-form-profile label {
+     display: block;
+     font-weight: bold;
+   }
+
+   .id-form-profile input,
+   .MSADMIN-form-profile input,
+   .useradministration-form-profile input,
+   .email-form-profile input,
+   .password-form-profile input,
+   .phone-form-profile input,
+   .gender-form-profile input,
+   .address-form-profile input,
+   .type-form-profile input,
+   .tca-form-profile input,
+   .tua-form-profile input {
+     width: 100%;
+     padding: 5px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+   }

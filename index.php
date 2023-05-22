@@ -21,6 +21,11 @@
            switch($page){
 
 
+               case 'PageVideo':
+                    include __DIR__ . '/page/Videos/PageVideo.php';
+                    break;
+
+
 
 
                case 'Hepl':
