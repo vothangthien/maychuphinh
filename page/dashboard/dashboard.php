@@ -42,20 +42,18 @@
         </div>
     </div>
     <script>
-    const logoutLink = document.getElementById('logout-link');
-
-    logoutLink.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        const confirmLogout = confirm('Bạn chắc chắn muốn thoát?');
-
-        if (confirmLogout) {
-            document.cookie = "user_email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            document.cookie = "user_type=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            window.location.href = logoutLink.getAttribute('href');
-        }
-    });
-</script>
+        const logoutLink = document.getElementById('logout-link');
+        
+        logoutLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            
+            const confirmLogout = confirm('Bạn chắc chắn muốn thoát?');
+            
+            if (confirmLogout) {
+                window.location.href = logoutLink.getAttribute('href');
+            }
+        });
+    </script>
     <script>
         const links = document.querySelectorAll('.dropdown-item');
         const contentPlaceholder = document.getElementById('content-placeholder');
@@ -75,13 +73,7 @@
                     window.location.href = 'http://localhost/shopping/index.php?page=Product';
                 } else if (pageParam === 'dashboard') {
                     window.location.href = 'http://localhost/shopping/index.php?page=dashboard';
-                } else if (pageParam === 'logout') {
-                    const confirmLogout = confirm('Bạn chắc chắn muốn thoát?');
-                    if (confirmLogout) {
-                        document.cookie = "user_email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                        document.cookie = "user_type=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                        window.location.href = './DeleteCookie.php';
-                    }else {
+                } else {
                     fetch(`./page/dashboard/${pageParam}.php`)
                         .then(response => response.text())
                         .then(data => {
