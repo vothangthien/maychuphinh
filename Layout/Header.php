@@ -51,7 +51,7 @@
                 ?>
                 <li><a class="dropdown-item" href="#">Admin Account</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="./DeleteCookie.php?logout=true&confirm=true" onclick="return confirm('Bạn chắc chắn muốn thoát?')">Log Out</a></li>
+                <li><a class="dropdown-item" href="../shopping/DeleteCookie.php?logout=true&confirm=true" onclick="return confirm('Bạn chắc chắn muốn thoát?')">Log Out</a></li>
             </ul>
         </li>
       </ul>

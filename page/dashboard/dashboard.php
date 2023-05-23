@@ -1,4 +1,12 @@
-
+<?php
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
+  if(!isset($_COOKIE['user_type']) ? (base64_decode($_COOKIE['user_type']) === 'administration') : false){
+    header('location: http://localhost/shopping/index.php?page=SigNin');
+    exit;
+  }
+  ?>
 <head>
     <link rel="stylesheet" href="././public/style/dashboard/dashboard.css"/>
 </head>
@@ -27,28 +35,23 @@
                 <h4><a class="dropdown-item" href="index.php?page=pageSetting" data-target="page-Setting">Setting</a></h4>
             </div>
             <div>
-                <h4><a id="logout-link" class="dropdown-item" href="./DeleteCookie.php">Log Out</a></h4>
+            <h4><a id="logout-link" class="dropdown-item" href="./DeleteCookie.php">Log Out</a></h4>
             </div>
         </div>
 
         <div class="container-from-dashboard-right">
             <div id="content-placeholder"></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            
         </div>
     </div>
     <script>
         const logoutLink = document.getElementById('logout-link');
-        
+
         logoutLink.addEventListener('click', (event) => {
             event.preventDefault();
-            
+
             const confirmLogout = confirm('Bạn chắc chắn muốn thoát?');
-            
+
             if (confirmLogout) {
                 window.location.href = logoutLink.getAttribute('href');
             }
@@ -65,7 +68,9 @@
                 const urlParams = new URLSearchParams(href.substring(href.indexOf('?') + 1));
                 const pageParam = urlParams.get('page');
 
-                if (pageParam === 'Home') {
+                if (href === "../shopping/DeleteCookie.php?logout=true&confirm=true") {
+                    window.location.href = 'http://localhost/shopping/DeleteCookie.php?logout=true&confirm=true';
+                } else if (pageParam === 'Home') {
                     window.location.href = 'http://localhost/shopping/index.php?page=Home';
                 } else if (pageParam === 'Profile') {
                     window.location.href = 'http://localhost/shopping/index.php?page=Profile';

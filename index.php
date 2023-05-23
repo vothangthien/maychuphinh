@@ -19,20 +19,13 @@
      <main> <?php  
           $page=isset($_GET['page']) ?$_GET['page']:"SigNin";
            switch($page){
-
-
                case 'PageVideo':
                     include __DIR__ . '/page/Videos/PageVideo.php';
                     break;
-
-
-
-
                case 'Hepl':
                     
                     include __DIR__ . './page/Hepl/Hepl.php';
-                    break;
-               
+                    break;             
                case'dashboard':
                     include __DIR__ . './page/dashboard/dashboard.php';
                     break;
