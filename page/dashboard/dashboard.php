@@ -53,7 +53,7 @@ header('Expires: 0');
             const confirmLogout = confirm('Bạn chắc chắn muốn thoát?');
 
             if (confirmLogout) {
-                window.location.href = logoutLink.getAttribute('href');
+                window.location.href = './DeleteCookie.php?logout=true&confirm=true';
             }
         });
     </script>
